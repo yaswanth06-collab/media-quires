@@ -1,0 +1,171 @@
+/* General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #ffd700;
+}
+
+/* Header */
+header {
+    background: #0077cc;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Main Layout */
+main {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+}
+
+.content {
+    flex: 3;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.sidebar {
+    flex: 1;
+    background: #e6e6e6;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+}
+
+/* ========================= */
+/* Mobile Devices (≤768px) */
+/* ========================= */
+@media (max-width: 768px) {
+
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    header p {
+        font-size: 16px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    body {
+        font-size: 16px;
+    }
+}
+
+/* ========================= */
+/* Tablet Devices (769px–1024px) */
+/* ========================= */
+@media (min-width: 769px) and (max-width: 1024px) {
+
+    nav {
+        padding: 15px;
+    }
+
+    header h1 {
+        font-size: 34px;
+    }
+
+    main {
+        flex-direction: column;
+    }
+
+    .content,
+    .sidebar {
+        width: 100%;
+    }
+
+    body {
+        font-size: 17px;
+    }
+}
+
+/* ========================= */
+/* Desktop Devices (≥1025px) */
+/* ========================= */
+@media (min-width: 1025px) {
+
+    nav {
+        padding: 20px 50px;
+    }
+
+    header h1 {
+        font-size: 42px;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    main {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
